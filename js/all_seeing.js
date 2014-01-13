@@ -406,6 +406,7 @@ var CCGameClass = function ()
 			
 			if (typeof doWriteUpgrades !== 'boolean') doWriteUpgrades = true;
 			if (doWriteUpgrades) this.writeUpgrades();
+			this.playSound("upgrade1");
 			return true;
 		} else {
 			this.playSound("dud");
